@@ -1,0 +1,13 @@
+.card { background: #000080; border-radius: 16px; overflow: hidden; border: 1px solid #1a1aaa; }
+.header { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-bottom: 1px solid #1a1aaa; }
+.number { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; color: #000; flex-shrink: 0; }
+.title { flex: 1; font-size: 16px; font-weight: 800; color: #fff; }
+.strength { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+.bar { width: 60px; height: 4px; background: #1a1aaa; border-radius: 2px; overflow: hidden; }
+.fill { height: 100%; border-radius: 2px; transition: width .5s ease; }
+.pts { font-size: 10px; color: #888; font-weight: 600; }
+.players { padding: 4px 0; }
+.playerRow { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 1px solid; }
+.avatar { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; flex-shrink: 0; }
+.playerName { flex: 1; font-size: 14px; font-weight: 600; color: #fff; }
+.badge { font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 6px; }
