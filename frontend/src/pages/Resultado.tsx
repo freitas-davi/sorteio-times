@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { RefObject } from 'react'
+import { useEffect, RefObject } from 'react'
 import type { SorteioResponse } from '../types'
 import TeamCard from '../components/TeamCard'
 import styles from './Resultado.module.css'
@@ -12,10 +12,13 @@ export default function Resultado({ resultadoRef }: Props) {
     const navigate = useNavigate()
     const resultado = resultadoRef.current
 
-    if (!resultado) {
-        navigate('/', { replace: true })
-        return null
-    }
+    useEffect(() => {
+        if (!resultado) {
+            navigate('/', { replace: true })
+        }
+    }, [resultado, navigate]);
+
+    if (!resultado) return null
 
     const maxForca = Math.max(...resultado.equipes.map(e => e.forca))
 
