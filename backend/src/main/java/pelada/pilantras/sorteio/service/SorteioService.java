@@ -53,7 +53,6 @@ public class SorteioService {
 
     private List<Equipe> distribuir(List<Jogador> jogadores, int numeroTimes) {
 
-        // Estrutura auxiliar: força acumulada por time
         int[] forcas = new int[numeroTimes];
         List<List<Jogador>> times = new ArrayList<>();
 

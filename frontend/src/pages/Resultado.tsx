@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import type {RefObject} from 'react'
-import type {SorteioResponse} from '../types'
+import { RefObject } from 'react'
+import type { SorteioResponse } from '../types'
 import TeamCard from '../components/TeamCard'
 import styles from './Resultado.module.css'
 
@@ -21,9 +21,10 @@ export default function Resultado({ resultadoRef }: Props) {
 
     return (
         <div className={styles.container}>
-            <header className={styles.header}>
-                <h1>🏆 Times <span className={styles.accent}>Sorteados</span></h1>
-            </header>
+            <div className={styles.topbar}>
+                <div className={styles.topbarIcon}>P.D.P</div>
+                <span className={styles.topbarLabel}>Pelada dos Pilantras</span>
+            </div>
 
             <div className={styles.teamList}>
                 {resultado.equipes.map((equipe, i) => (
@@ -32,7 +33,7 @@ export default function Resultado({ resultadoRef }: Props) {
             </div>
 
             <button className={styles.newBtn} onClick={() => navigate('/')}>
-                ↺ Novo Sorteio
+                ↺ Novo sorteio
             </button>
         </div>
     )

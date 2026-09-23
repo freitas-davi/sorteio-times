@@ -9,7 +9,7 @@ public enum Categoria {
 
     public int peso() {
         return switch (this) {
-            case A -> 5;
+            case A -> 4;
             case B -> 3;
             case C -> 2;
             case D -> 1;

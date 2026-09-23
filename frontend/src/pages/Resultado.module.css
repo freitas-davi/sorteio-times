@@ -1,7 +1,84 @@
-.container { max-width: 480px; margin: 0 auto; padding: 24px 16px 60px; }
-.header { margin-bottom: 24px; }
-.header h1 { font-size: 28px; font-weight: 900; color: #fff; letter-spacing: -0.5px; }
-.accent { color: #B8860B; }
-.teamList { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
-.newBtn { width: 100%; padding: 16px; background: transparent; border: 1.5px solid #B8860B; border-radius: 14px; font-size: 15px; font-weight: 700; color: #B8860B; cursor: pointer; transition: background .15s; font-family: inherit; }
-.newBtn:hover { background: rgba(184,134,11,.1); }
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    width: 100%;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.topbarIcon {
+    width: 40px;
+    height: 40px;
+    background: #B8860B;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+    flex-shrink: 0;
+}
+
+.topbarLabel {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8899AA;
+}
+
+.title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.title span { color: #32CD32; }
+
+.subtitle {
+    font-size: 14px;
+    color: #8899AA;
+    margin-bottom: 36px;
+    line-height: 1.5;
+}
+
+.divider {
+    height: 1px;
+    background: #1E3A5F;
+    margin-bottom: 28px;
+}
+
+.teamList {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.newBtn {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 1px solid #B8860B;
+    border-radius: 2px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #B8860B;
+    cursor: pointer;
+    transition: background .15s;
+}
+
+.newBtn:hover { background: rgba(184,134,11,.08); }
