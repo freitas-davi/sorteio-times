@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import { useEffect, RefObject } from 'react'
+import { useEffect } from 'react'
+import type { RefObject } from 'react'
 import type { SorteioResponse } from '../types'
 import TeamCard from '../components/TeamCard'
 import styles from './Resultado.module.css'

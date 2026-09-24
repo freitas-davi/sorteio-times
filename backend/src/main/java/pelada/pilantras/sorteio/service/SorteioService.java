@@ -1,5 +1,6 @@
 package pelada.pilantras.sorteio.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import pelada.pilantras.sorteio.dto.SorteioRequestDTO;
 import pelada.pilantras.sorteio.dto.SorteioResponseDTO;
@@ -12,6 +13,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Service
 public class SorteioService {
 
@@ -31,9 +33,11 @@ public class SorteioService {
     // 1. Valida a entrada antes de qualquer processamento
     private void validar(List<Jogador> jogadores, int numeroTimes) {
         if (numeroTimes < 2) {
+            log.error("[ERROR]: Número de times deve ser pelo menos 2.");
             throw new IllegalArgumentException("Número de times deve ser pelo menos 2.");
         }
         if (jogadores.size() < numeroTimes) {
+            log.error("[ERROR]: Jogadores insuficientes para a quantidade de times");
             throw new IllegalArgumentException(
                     "Jogadores insuficientes: %d jogadores para %d equipes.".formatted(jogadores.size(), numeroTimes)
             );

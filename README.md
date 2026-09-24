@@ -2,6 +2,8 @@
 
 Um aplicativo inteligente para sortear times de forma equilibrada em peladas de futebol. O sistema leva em conta o nível de cada jogador para criar times com força semelhante.
 
+**Confira melhor em**: https://sorteio-pilantras.fly.dev/
+
 ---
 
 ## O Que É?
@@ -40,25 +42,16 @@ Um aplicativo inteligente para sortear times de forma equilibrada em peladas de 
 
 ---
 
-## 🚀 Getting Started
-
-### Pré-requisitos
-
-- **Java 21+** (para backend)
-- **Node.js 18+** (para frontend)
-- **Maven 3.8+** (incluído com o projeto)
-
-
----
-
 ## 📦 Dependências
 
 ### Backend
+- **Java 21+**
 - **Spring Boot 4.1.1** - Framework web
 - **Lombok** - Geração de código
 - **Maven** - Build tool
 
 ### Frontend
+- **Node.js 18+**
 - **React 19** - UI library
 - **TypeScript** - Type safety
 - **Vite 8** - Build tool
